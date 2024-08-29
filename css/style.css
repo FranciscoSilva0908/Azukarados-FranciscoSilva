@@ -1,168 +1,161 @@
-*{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Poppins', Times, serif;
-    color: #1f3547;
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", Times, serif;
+  color: #1f3547;
 }
 
-.header{
-    background-color: #f3a2b0;
-    position: sticky;
-    top: 0;
+.header {
+  background-color: #f3a2b0;
+  position: sticky;
+  top: 0;
 }
 
-.fondo-nav{
-    background-color: #f3a2b0;
-
+.fondo-nav {
+  background-color: #f3a2b0;
+  color: #1f3547;
 }
 
-.novedades{
-    width: 100%;
+.footer {
+  background-color: grey;
+  padding: 20px;
+  position: sticky;
+  bottom: 1;
 }
 
-.productos{
-    background-color: #fff;
-    
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
 }
 
-.grid-productos{
-    display: grid;
-    grid-template-rows: repeat(1, 150px);
-    grid-template-columns: repeat(3, 1fr);
-
-    
+.productos {
+  background-color: #fff;
 }
 
-.grid-relacionados{
-    display: grid;
-    grid-template-rows: repeat(1, 150px);
-    grid-template-columns: repeat(2, 1fr);
+.grid-productos {
+  display: grid;
+  grid-template-rows: repeat(1, 150px);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.nav-productos h2{
-    text-align: center;
+.nav-productos {
+  border: solid #f3a2b0;
+}
+.nav-productos h2 {
+  text-align: center;
 }
 
-.productos-list{
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 40px 0px 40px;
+.productos-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 40px 0px 40px;
+}
+.productos-list li {
+  width: 300px;
+  border-radius: 8px;
+}
+.productos-list li h3 {
+  text-align: center;
+  font-size: small;
+}
+.productos-list li a img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.productos-list li h3{
-    text-align: center;
-    font-size: small;
+.compra {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+.compra h2 {
+  text-align: center;
+  padding: 10px;
 }
 
-.productos-list li{
-    width: 300px;
-    border-radius: 8px;
+.nav-compra {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.nav-compra img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+}
+.nav-compra aside {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+  margin: 50px;
+  width: 30%;
 }
 
-.productos-list li a img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.grid-relacionados {
+  display: grid;
+  grid-template-rows: repeat(1, 150px);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* movil */
 @media only screen and (max-width: 498px) {
-    .productos-list li a img{
-        height: 100px
-    }
-    
+  .productos-list li a img {
+    height: 100px;
+  }
 }
-
 /* tablet */
 @media only screen and (max-width: 960px) {
-    .productos-list li a img{
-        height: 150px
-    }
-    .nav-compra{
-        font-size: smaller;
-    }
-    .nav-compra aside{
-        margin: 30px;
-    }
+  .productos-list li a img {
+    height: 150px;
+  }
+  .nav-compra {
+    font-size: smaller;
+  }
+  .nav-compra aside {
+    margin: 30px;
+  }
+}
+.seccion-novedades {
+  border: solid #f3a2b0;
 }
 
-.ubicacion{
-    background-color: #fff;
-    padding: 20px;
+.novedades {
+  width: 100%;
 }
 
-.nav-ubicacion h2{
-    text-align: center;
+.ubicacion {
+  background-color: #fff;
+  padding: 20px;
+  border: solid #f3a2b0;
 }
 
-.maps{
-    display: block; 
-    margin: 0 auto;
+.nav-ubicacion h2 {
+  text-align: center;
 }
 
-.footer{
-    background-color: grey;
-    padding: 20px;
-    position: sticky;
-    bottom: 1;
+.maps {
+  display: block;
+  margin: 0 auto;
 }
 
-.nav-footer{
-    display: flex;
-    justify-content: space-around;
+.contacto {
+  background-color: #fff;
+  padding: 20px;
+  border: solid #f3a2b0;
+}
+.contacto h2 {
+  text-align: center;
+  padding: 20px;
 }
 
-.contacto{
-    background-color: #fff;
-    padding: 20px;
+.speaker-form {
+  border: 1px solid black;
+  width: 20%;
 }
 
-.contacto h2{
-    text-align: center;
-    padding: 20px;
-}
-
-.speaker-form{
-    border: 1px solid black;
-    width: 20%;  
-}
-
-.compra{
-    background-color: #fff;
-    padding: 20px;
-    width: 100%;
-    
-}
-
-.compra h2{
-    text-align: center;
-    padding: 10px;
-    
-
-}
-
-.nav-compra{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.nav-compra img{
-    width: 60%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.nav-compra aside{
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    padding: 10px;
-    margin: 50px;
-    width: 30%;
-}
-
-
+/*# sourceMappingURL=style.css.map */

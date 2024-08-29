@@ -1,0 +1,41 @@
+.seccion-novedades{
+    border: solid $color-principal;
+}
+.novedades{
+    width: 100%;
+}
+
+.ubicacion{
+    background-color: #fff;
+    padding: 20px;
+    border: solid $color-principal;
+}
+
+.nav-ubicacion{
+    h2{
+        text-align: center;
+    }
+    
+}
+
+.maps{
+    display: block; 
+    margin: 0 auto;
+}
+
+
+
+.contacto{
+    background-color: #fff;
+    padding: 20px;
+    border: solid $color-principal;
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.speaker-form{
+    border: 1px solid black;
+    width: 20%;  
+}
